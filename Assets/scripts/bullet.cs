@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+public int damage = 1;
+
+ private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        Obstacle asteroid = other.GetComponent<Obstacle>();
+        if(asteroid == null) return;
+
+        asteroid.TakeHit(damage);
+        Destroy(gameObject);
+         Debug.Log("Bullet trigger hit: " + other.name);
     }
 }
