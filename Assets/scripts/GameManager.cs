@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Score")]
     public float scoreMultiplier = 10f;
-    private float elapsedTime = 0f;
+
     private float score = 0f;
     private bool isGameOver = false;
 
@@ -55,10 +55,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isGameOver) return;
-        elapsedTime += Time.deltaTime;
-        score = Mathf.FloorToInt(elapsedTime * scoreMultiplier);
-        scoreText.text = "Score: " + score;
+       
 
         if (!audioSource.isPlaying)
         {
@@ -124,5 +121,12 @@ public class GameManager : MonoBehaviour
         int randomIndex = Random.Range(0, musicTracks.Length);
         audioSource.clip = musicTracks[randomIndex];
         audioSource.Play();
+    }
+
+    public void AddScore(int amount)
+    {
+        if (isGameOver) return;
+     score += amount;
+    scoreText.text = "Score: " + score;
     }
 }

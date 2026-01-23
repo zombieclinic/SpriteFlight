@@ -14,7 +14,7 @@ public class Obstacle : MonoBehaviour
 
     [Header("Hit Points by size")]
     public int minHits = 1;
-    public int maxHits = 2;
+    public int maxHits = 1;
     private int hitsRemaining;
 
     [Header("Movement")]
@@ -75,6 +75,10 @@ public class Obstacle : MonoBehaviour
 
         if (hitsRemaining <= 0)
         {
+            if(GameManager.Instance != null)
+            {
+                GameManager.Instance.AddScore(10);
+            }
             Destroy(gameObject);
         }
     }
