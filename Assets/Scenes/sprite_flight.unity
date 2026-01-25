@@ -725,6 +725,34 @@ PrefabInstance:
       propertyPath: thrustForce
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: laserSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
+    - target: {fileID: 8556526177800431914, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
+      propertyPath: 'laserSounds.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bf58320261d0c63468004cf12b05193d, type: 3}
     - target: {fileID: 9151090672732260283, guid: 547289a49360d0c49a43951bc2df99c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -4,6 +4,6 @@
         <ui:Label text="Main Menu" name="MainMenuLabel" class="header" style="top: 15%;"/>
         <ui:Button text="Start" name="StartLabel" class="button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
         <ui:Button text="Settings" name="SettingsLabel" class="button" style="border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0;"/>
-        <ui:Button text="Exit" class="button" style="border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0;"/>
+        <ui:Button text="Exit" name="ExitLabel" class="button" style="border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0;"/>
     </ui:VisualElement>
 </ui:UXML>
